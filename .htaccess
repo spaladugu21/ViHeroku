@@ -7,7 +7,4 @@
     RewriteRule ^(.+)\.php$ https://vision-fullsb.herokuapp.com//$1 [R=301,L]
     # Resolve .php file for extensionless php urls
     RewriteRule ^([^/.]+)$ $1.php [L]
-
-<IfModule mod_php5.c>
 php_value memory_limit 64M
-</IfModule>
