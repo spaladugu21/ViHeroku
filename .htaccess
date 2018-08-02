@@ -1,3 +1,5 @@
+php_value memory_limit 256M
+
     RewriteEngine On
     # Unless directory, remove trailing slash
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -7,6 +9,3 @@
     RewriteRule ^(.+)\.php$ https://vision-fullsb.herokuapp.com//$1 [R=301,L]
     # Resolve .php file for extensionless php urls
     RewriteRule ^([^/.]+)$ $1.php [L]
-<IfModule mod_php5.c>
-php_value memory_limit 256M
-</IfModule>
