@@ -1,4 +1,7 @@
 <?php
+
+ini_set('memory_limit','256M');
+
 include("config/core.php"); 
 Class dbObj{
 	
