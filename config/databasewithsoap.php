@@ -1,4 +1,7 @@
 <?php 
+
+ini_set('memory_limit','256M');
+
 Class dbObj{
 	
 	// specify your own database credentials
