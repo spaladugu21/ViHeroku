@@ -3,6 +3,7 @@
   //0 for hide warning errors
   //1 for show all warning errors
 ini_set('display_errors', 0);
+ini_set('always_populate_raw_post_data', -1);
 error_reporting(E_ALL);
  
  // Start session
