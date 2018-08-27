@@ -178,7 +178,7 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$RecordType=$fdata['Notification']['sObject']['RecordType'];
                 $RecordType = !empty($fdata['Notification']['sObject']['RecordType']) ? "'$RecordType'" : "NULL";
 		$TipOrigin_heroku__c=$fdata['Notification']['sObject']['Tiporigin_heroku__c'];
-                $TipOrigin_heroku__c = !empty($fdata['Notification']['sObject']['Tiporigin_heroku__c']) ? "'$TipOrigin_heroku__c'" : "true";
+                $TipOrigin_heroku__c = !empty($fdata['Notification']['sObject']['Tiporigin_heroku__c']) ? "true" : "true";
 		$recordname=$fdata['Notification']['sObject']['RecordType_name__c'];
                 $recordname = !empty($fdata['Notification']['sObject']['RecordType_name__c']) ? "'$recordname'" : "NULL";
 						$hdate = "'" .date("Y-m-d h:i:sa T"). "'";
