@@ -1,5 +1,6 @@
 <?php  
 ini_set('display_errors', 0);
+ini_set('always_populate_raw_post_data', -1);
 error_reporting(E_ALL);
 include("config/databasewithsoap.php");
 $db = new dbObj();
