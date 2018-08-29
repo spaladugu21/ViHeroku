@@ -130,10 +130,12 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$OwnerId=$fdata['Notification']['sObject']['OwnerId'];
                 $OwnerId = !empty($fdata['Notification']['sObject']['OwnerId']) ? "'$OwnerId'" : "NULL";
 				$readerEvent__c=$fdata['Notification']['sObject']['readerEvent__c'];
+				$readerEvent__c=str_replace("'","''",$readerEvent__c);
                 $readerEvent__c = !empty($fdata['Notification']['sObject']['readerEvent__c']) ? "'$readerEvent__c'" : "NULL";
 				$RecordTypeId=$fdata['Notification']['sObject']['RecordTypeId'];
                 $RecordTypeId = !empty($fdata['Notification']['sObject']['RecordTypeId']) ? "'$RecordTypeId'" : "NULL";
 				$Responce_JSON__c=$fdata['Notification']['sObject']['Responce_JSON__c'];
+				$Responce_JSON__c=str_replace("'","''",$Responce_JSON__c);
                 $Responce_JSON__c = !empty($fdata['Notification']['sObject']['Responce_JSON__c']) ? "'$Responce_JSON__c'" : "NULL";
 				$Service_Provider__c=$fdata['Notification']['sObject']['Service_Provider__c'];
                 $Service_Provider__c = !empty($fdata['Notification']['sObject']['Service_Provider__c']) ? "'$Service_Provider__c'" : "NULL";
@@ -148,6 +150,7 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$State__c=$fdata['Notification']['sObject']['State__c'];
                 $State__c = !empty($fdata['Notification']['sObject']['State__c']) ? "'$State__c'" : "NULL";
 				$Street__c=$fdata['Notification']['sObject']['Street__c'];
+				$Street__c=str_replace("'","''",$Street__c);
                 $Street__c = !empty($fdata['Notification']['sObject']['Street__c']) ? "'$Street__c'" : "NULL";
 				$Telematic_Event_Date__c=$fdata['Notification']['sObject']['Telematic_Event_Date__c'];
                 $Telematic_Event_Date__c = !empty($fdata['Notification']['sObject']['Telematic_Event_Date__c']) ? "'$Telematic_Event_Date__c'" : "NULL";
@@ -302,10 +305,12 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$OwnerId=$fdata['sObject']['OwnerId'];
                 $OwnerId = !empty($fdata['sObject']['OwnerId']) ? "'$OwnerId'" : "NULL";
 				$readerEvent__c=$fdata['sObject']['readerEvent__c'];
+				$readerEvent__c=str_replace("'","''",$readerEvent__c);
                 $readerEvent__c = !empty($fdata['sObject']['readerEvent__c']) ? "'$readerEvent__c'" : "NULL";
 				$RecordTypeId=$fdata['sObject']['RecordTypeId'];
                 $RecordTypeId = !empty($fdata['sObject']['RecordTypeId']) ? "'$RecordTypeId'" : "NULL";
 				$Responce_JSON__c=$fdata['sObject']['Responce_JSON__c'];
+				$Responce_JSON__c=str_replace("'","''",$Responce_JSON__c);
                 $Responce_JSON__c = !empty($fdata['sObject']['Responce_JSON__c']) ? "'$Responce_JSON__c'" : "NULL";
 				$Service_Provider__c=$fdata['sObject']['Service_Provider__c'];
                 $Service_Provider__c = !empty($fdata['sObject']['Service_Provider__c']) ? "'$Service_Provider__c'" : "NULL";
@@ -320,6 +325,7 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$State__c=$fdata['sObject']['State__c'];
                 $State__c = !empty($fdata['sObject']['State__c']) ? "'$State__c'" : "NULL";
 				$Street__c=$fdata['sObject']['Street__c'];
+				$Street__c=str_replace("'","''",$Street__c);
                 $Street__c = !empty($fdata['sObject']['Street__c']) ? "'$Street__c'" : "NULL";
 				$Telematic_Event_Date__c=$fdata['sObject']['Telematic_Event_Date__c'];
                 $Telematic_Event_Date__c = !empty($fdata['sObject']['Telematic_Event_Date__c']) ? "'$Telematic_Event_Date__c'" : "NULL";
