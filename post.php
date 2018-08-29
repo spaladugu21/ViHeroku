@@ -113,7 +113,8 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$LastViewedDate=$fdata['Notification']['sObject']['LastViewedDate'];
                 $LastViewedDate = !empty($fdata['Notification']['sObject']['LastViewedDate']) ? "'$LastViewedDate'" : "NULL";
 				$Location_Address__c=$fdata['Notification']['sObject']['Location_Address__c'];
-                $Location_Address__c = !empty($fdata['Notification']['sObject']['Location_Address__c']) ? "'str_replace("'","''",$Location_Address__c)'" : "NULL";
+				$Location_Address__c=str_replace("'","''",$Location_Address__c);
+                $Location_Address__c = !empty($fdata['Notification']['sObject']['Location_Address__c']) ? "'$Location_Address__c'" : "NULL";
 				$Max_Speed_Miles_per_hour__c=$fdata['Notification']['sObject']['Max_Speed_Miles_per_hour__c'];
                 $Max_Speed_Miles_per_hour__c = !empty($fdata['Notification']['sObject']['Max_Speed_Miles_per_hour__c']) ? "'$Max_Speed_Miles_per_hour__c'" : "NULL";
 				$Name=$fdata['Notification']['sObject']['Name'];
