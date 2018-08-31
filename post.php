@@ -87,7 +87,7 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$HeartbeatInsyncId__c=$fdata['Notification']['sObject']['HeartbeatInsyncId__c'];
                 $HeartbeatInsyncId__c = !empty($fdata['Notification']['sObject']['HeartbeatInsyncId__c']) ? "'$HeartbeatInsyncId__c'" : "NULL";
 				$House_Number__c=$fdata['Notification']['sObject']['House_Number__c'];
-                $House_Number__c = !empty($fdata['Notification']['sObject']['House_Number__c']) ? "'House_Number__c'" : "NULL";
+                $House_Number__c = !empty($fdata['Notification']['sObject']['House_Number__c']) ? "'$House_Number__c'" : "NULL";
 				$IdleTimeInsyncId__c=$fdata['Notification']['sObject']['IdleTimeInsyncId__c'];
                 $IdleTimeInsyncId__c = !empty($fdata['Notification']['sObject']['IdleTimeInsyncId__c']) ? "'$IdleTimeInsyncId__c'" : "NULL";
 				$InsyncId__c=$fdata['Notification']['sObject']['InsyncId__c'];
