@@ -381,7 +381,7 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 			//$Collection_Route_Number__c =$fdata['sObject']['Collection_Route_Number__c'];
                 //$Collection_Route_Number__c  = !empty($fdata['sObject']['Collection_Route_Number__c ']) ? "'$Collection_Route_Number__c '" : "NULL";	
 			$Collection_Route_Number__c=$fdata['sObject']['Collection_Route_Number__c'];
-                $Collection_Route_Number__c = !empty($fdata['sObject']['Collection_Route_Number__c']) ? "'Collection_Route_Number__c'" : "NULL";
+                $Collection_Route_Number__c = !empty($fdata['sObject']['Collection_Route_Number__c']) ? "'$Collection_Route_Number__c'" : "NULL";
 			$Container_Asset_SerialNumber__c =$fdata['sObject']['Container_Asset_SerialNumber__c'];
                 $Container_Asset_SerialNumber__c = !empty($fdata['sObject']['Container_Asset_SerialNumber__c']) ? "'$Container_Asset_SerialNumber__c'" : "NULL";
 			$SFDC_Container_Asset_r_RFID_Number_c__c=$fdata['sObject']['SFDC_Container_Asset_r_RFID_Number_c__c'];
