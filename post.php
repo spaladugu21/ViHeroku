@@ -187,8 +187,11 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 			$recordname=$fdata['Notification']['sObject']['RecordType_name__c'];
                 $recordname = !empty($fdata['Notification']['sObject']['RecordType_name__c']) ? "'$recordname'" : "NULL";
 		$hdate = "'" .date("Y-m-d h:i:sa T"). "'";
-			$Collection_Route_Number__c =$fdata['Notification']['sObject']['Collection_Route_Number__c'];
-                $Collection_Route_Number__c  = !empty($fdata['Notification']['sObject']['Collection_Route_Number__c ']) ? "'$Collection_Route_Number__c '" : "NULL";	
+			//$Collection_Route_Number__c =$fdata['Notification']['sObject']['Collection_Route_Number__c'];
+               // $Collection_Route_Number__c  = !empty($fdata['Notification']['sObject']['Collection_Route_Number__c ']) ? "'$Collection_Route_Number__c '" : "NULL";	
+			$Collection_Route_Number__c=$fdata['Notification']['sObject']['Collection_Route_Number__c'];
+                $Collection_Route_Number__c = !empty($fdata['Notification']['sObject']['Collection_Route_Number__c']) ? "'$Collection_Route_Number__c'" : "NULL";
+				
 			$Container_Asset_SerialNumber__c =$fdata['Notification']['sObject']['Container_Asset_SerialNumber__c'];
                 $Container_Asset_SerialNumber__c = !empty($fdata['Notification']['sObject']['Container_Asset_SerialNumber__c']) ? "'$Container_Asset_SerialNumber__c'" : "NULL";
 			$SFDC_Container_Asset_r_RFID_Number_c__c=$fdata['Notification']['sObject']['SFDC_Container_Asset_r_RFID_Number_c__c'];
@@ -375,8 +378,10 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 			$recordname=$fdata['sObject']['RecordType_name__c'];
                 $recordname = !empty($fdata['sObject']['RecordType_name__c']) ? "'$recordname'" : "NULL";
 		$hdate = "'" .date("Y-m-d h:i:sa T"). "'";
-			$Collection_Route_Number__c =$fdata['sObject']['Collection_Route_Number__c'];
-                $Collection_Route_Number__c  = !empty($fdata['sObject']['Collection_Route_Number__c ']) ? "'$Collection_Route_Number__c '" : "NULL";	
+			//$Collection_Route_Number__c =$fdata['sObject']['Collection_Route_Number__c'];
+                //$Collection_Route_Number__c  = !empty($fdata['sObject']['Collection_Route_Number__c ']) ? "'$Collection_Route_Number__c '" : "NULL";	
+			$Collection_Route_Number__c=$fdata['sObject']['Collection_Route_Number__c'];
+                $Collection_Route_Number__c = !empty($fdata['sObject']['Collection_Route_Number__c']) ? "'Collection_Route_Number__c'" : "NULL";
 			$Container_Asset_SerialNumber__c =$fdata['sObject']['Container_Asset_SerialNumber__c'];
                 $Container_Asset_SerialNumber__c = !empty($fdata['sObject']['Container_Asset_SerialNumber__c']) ? "'$Container_Asset_SerialNumber__c'" : "NULL";
 			$SFDC_Container_Asset_r_RFID_Number_c__c=$fdata['sObject']['SFDC_Container_Asset_r_RFID_Number_c__c'];
