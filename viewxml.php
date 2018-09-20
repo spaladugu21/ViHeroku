@@ -1,6 +1,6 @@
 <?php  
 ini_set('display_errors', 0);
-ini_set('memory_limit', '1024M');
+ini_set('memory_limit', '2048M');
 error_reporting(E_ALL);
  // Start session
 @session_start();
