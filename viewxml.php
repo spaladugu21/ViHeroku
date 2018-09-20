@@ -68,4 +68,4 @@ if(!empty($xml)){
  //delete token
 	$newObj = new Dbdata();
 	$tokenData = $newObj->delToken($gettoken);
- ?>
+ ?> 
