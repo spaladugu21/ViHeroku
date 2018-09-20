@@ -1,6 +1,7 @@
 <?php  
 ini_set('display_errors', 0);
-ini_set('memory_limit', '1024M');
+//change the memory size from 1024M to 2048M - Hashim Khan
+ini_set('memory_limit', '2048M');
 error_reporting(E_ALL);
  // Start session
 @session_start();
