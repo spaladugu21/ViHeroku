@@ -2,7 +2,7 @@
 ini_set('display_errors', 0);
 ini_set('memory_limit', '2048M');
 
-// echo stmnt - hkhan
+// echo stmnt - hashim khan
 echo "Hello world!"; 
 
 error_reporting(E_ALL);
