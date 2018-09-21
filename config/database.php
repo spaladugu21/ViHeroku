@@ -1,6 +1,8 @@
 <?php
 
-ini_set('memory_limit','512M');
+//ini_set('memory_limit','512M');
+//changed memory limit size
+ini_set('memory_limit','2048M');
 
 include("config/core.php"); 
 Class dbObj{
