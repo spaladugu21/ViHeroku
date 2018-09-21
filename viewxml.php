@@ -3,7 +3,7 @@ ini_set('display_errors', 0);
 ini_set('memory_limit', '2048M');
 
 // echo stmnt - hashim khan
-echo "Hello world!"; 
+//echo "Hello world!"; 
 
 error_reporting(E_ALL);
  // Start session
@@ -43,10 +43,10 @@ if(!empty($xml)){
        // for check condition basis of urls and redirect to functions
 	
 	//debug statement - hashim khan
-	echo memory_get_usage() . "\n";	
+	//echo memory_get_usage() . "\n";	
 	
 	// getting memory info - hkhan
-	phpinfo();
+	//phpinfo();
 		
 		// instantiate database and  object
 				$newObj = new Dbdata();
@@ -56,10 +56,10 @@ if(!empty($xml)){
 				$products_arr["results"]=array();
 		
 				//debug statement - hashim khan
-				echo memory_get_usage() . "\n";
+				//echo memory_get_usage() . "\n";
 		
 				// getting memory info - hkhan
-				phpinfo();
+				//phpinfo();
 		
 				if(!empty($emps)){
 						foreach($emps as $key => $emp) {
@@ -67,10 +67,10 @@ if(!empty($xml)){
 						}
 					
 				//debug statement - hashim khan
-					echo memory_get_usage() . "\n";
+				//	echo memory_get_usage() . "\n";
 				
 				// getting memory info - hkhan
-				phpinfo();
+				//phpinfo();
 				
 				// make it json format	
 					echo json_encode($products_arr);
