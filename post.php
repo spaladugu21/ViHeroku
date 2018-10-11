@@ -153,11 +153,11 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$Street__c=str_replace("'","''",$Street__c);
                 $Street__c = !empty($fdata['Notification']['sObject']['Street__c']) ? "'$Street__c'" : "NULL";
 		
-		//$Telematic_Event_Date__c=$fdata['Notification']['sObject']['Telematic_Event_Date__c'];
-                //$Telematic_Event_Date__c = !empty($fdata['Notification']['sObject']['Telematic_Event_Date__c']) ? "'$Telematic_Event_Date__c'" : "NULL";
-		echo "Event Date time before calling function" . $Event_Start_Date_Time__c;
-		$Telematic_Event_Date__c = !empty($fdata['Notification']['sObject']['Event_Start_Date_Time__c']) ? "'" . explode('T', $fdata['Notification']['sObject']['Event_Start_Date_Time__c'])[0] . "'" : "NULL";
-		echo "Telematic_Event_Date__c after calling function" . $Telematic_Event_Date__c;
+		$Telematic_Event_Date__c=$fdata['Notification']['sObject']['Telematic_Event_Date__c'];
+                $Telematic_Event_Date__c = !empty($fdata['Notification']['sObject']['Telematic_Event_Date__c']) ? "'$Telematic_Event_Date__c'" : "NULL";
+		//echo "Event Date time before calling function" . $Event_Start_Date_Time__c;
+		//$Telematic_Event_Date__c = !empty($fdata['Notification']['sObject']['Event_Start_Date_Time__c']) ? "'" . explode('T', $fdata['Notification']['sObject']['Event_Start_Date_Time__c'])[0] . "'" : "NULL";
+		//echo "Telematic_Event_Date__c after calling function" . $Telematic_Event_Date__c;
 				
 				$Timezone__c=$fdata['Notification']['sObject']['Timezone__c'];		
                 $Timezone__c = !empty($fdata['Notification']['sObject']['Timezone__c']) ? "'$Timezone__c'" : "NULL";
@@ -350,11 +350,11 @@ if(!empty($xmlarray) && $xmlarray!=='no_record'){
 				$Street__c=$fdata['sObject']['Street__c'];
 				$Street__c=str_replace("'","''",$Street__c);
                 $Street__c = !empty($fdata['sObject']['Street__c']) ? "'$Street__c'" : "NULL";
-		//$Telematic_Event_Date__c=$fdata['sObject']['Telematic_Event_Date__c'];
-                //$Telematic_Event_Date__c = !empty($fdata['sObject']['Telematic_Event_Date__c']) ? "'$Telematic_Event_Date__c'" : "NULL";
-		echo "Event Date time before calling function" . $Event_Start_Date_Time__c;
-		$Telematic_Event_Date__c = !empty($fdata['Notification']['sObject']['Event_Start_Date_Time__c']) ? "'" . explode('T', $fdata['Notification']['sObject']['Event_Start_Date_Time__c'])[0] . "'" : "NULL";
-		echo "Telematic_Event_Date__c after calling function" . $Telematic_Event_Date__c;
+		$Telematic_Event_Date__c=$fdata['sObject']['Telematic_Event_Date__c'];
+                $Telematic_Event_Date__c = !empty($fdata['sObject']['Telematic_Event_Date__c']) ? "'$Telematic_Event_Date__c'" : "NULL";
+		//echo "Event Date time before calling function" . $Event_Start_Date_Time__c;
+		//$Telematic_Event_Date__c = !empty($fdata['Notification']['sObject']['Event_Start_Date_Time__c']) ? "'" . explode('T', $fdata['Notification']['sObject']['Event_Start_Date_Time__c'])[0] . "'" : "NULL";
+		//echo "Telematic_Event_Date__c after calling function" . $Telematic_Event_Date__c;
 				
 				$Timezone__c=$fdata['sObject']['Timezone__c'];
                 $Timezone__c = !empty($fdata['sObject']['Timezone__c']) ? "'$Timezone__c'" : "NULL";
